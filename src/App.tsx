@@ -12,11 +12,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://ktc-hyunsoo.github.io/storybook-test/storybook"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          To KTC Design System Storybook
         </a>
       </header>
     </div>
