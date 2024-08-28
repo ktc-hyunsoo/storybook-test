@@ -27,16 +27,15 @@ jobs:
       - name: Build Storybook
         run: npm run build-storybook
 
-      - name: Deploy React app to GitHub Pages
+      - name: Deploy React app to /app path
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-          cname: ktc-hyunsoo.github.io/ts-test
-
-      - name: Deploy Storybook to GitHub Pages
+          destination_dir: app
+      - name: Deploy Storybook as default page
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./storybook-static
-          destination_dir: storybook
+          cname: ktc-hyunsoo.github.io/storybook-test
