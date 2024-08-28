@@ -33,6 +33,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           destination_dir: app
+          
       - name: Deploy Storybook as default page
         uses: peaceiris/actions-gh-pages@v3
         with:
